@@ -1,5 +1,8 @@
 /* this sketch will create chore lists for
- three children */
+ three children 
+ 
+ 
+ Code designed and written by Derek Dallas Fall 2015*/
 
 // define variables
 
