@@ -1,0 +1,506 @@
+
+//Link Keene 
+polyCube;
+ 
+for ($i=1; $i<=20; $i++) // This is your For loop statement:( the initializer; Test ;and Increment)
+{ 
+duplicate; //This is the code you will repeat over and over
+move -r 3 0 0; 
+};
+
+
+ 
+
+select -cl  ;
+// Undo: select -cl   // 
+// Undo: polyCube; 
+for ($i=1; $i<=20; $i++) // This is your For loop statement:( the initializer; Test ;and Increment)
+{ 
+duplicate; //This is the code you will repeat over and over
+move -r 0 0 3; 
+}; // 
+polyCube; 
+for ($i=1; $i<=20; $i++) // This is your For loop statement:( the initializer; Test ;and Increment)
+{ 
+duplicate; //This is the code you will repeat over and over
+move  -3 0 3; 
+};
+select -cl  ;
+// Undo: select -cl   // 
+// Undo: polyCube; 
+for ($i=1; $i<=20; $i++) // This is your For loop statement:( the initializer; Test ;and Increment)
+{ 
+duplicate; //This is the code you will repeat over and over
+move  -3 0 3; 
+}; // 
+select -cl  ;
+select -r pCube1 pCube2 pCube3 pCube4 pCube5 pCube22 pCube23 pCube24 pCube25 pCube26 ;
+duplicate; 
+move 3 3 3;
+select -cl  ;
+select -r pCube27 ;
+select -cl  ;
+// Undo: select -cl   // 
+// Undo: select -r pCube27  // 
+// Undo: select -cl   // 
+// Undo: duplicate; 
+move 3 3 3 // 
+select -cl  ;
+select -r pCube5 ;
+duplicate;
+// Result: pCube27 // 
+select -r pCube4 ;
+duplicate;
+// Result: pCube28 // 
+select -r pCube3 ;
+duplicate;
+// Result: pCube29 // 
+select -r pCube2 ;
+duplicate;
+// Result: pCube30 // 
+select -r pCube1 ;
+duplicate;
+// Result: pCube31 // 
+select -r pCube23 ;
+duplicate;
+// Result: pCube32 // 
+select -r pCube24 ;
+duplicate;
+// Result: pCube33 // 
+select -r pCube25 ;
+duplicate;
+// Result: pCube34 // 
+select -r pCube26 ;
+duplicate;
+// Result: pCube35 // 
+select -cl  ;
+select -r pCube1 pCube2 pCube3 pCube4 pCube5 pCube22 pCube23 pCube24 pCube25 pCube26 pCube27 pCube28 pCube29 pCube30 pCube31 pCube32 pCube33 pCube34 pCube35 ;
+select -cl  ;
+select -tgl pCube5 ;
+select -tgl pCube3 ;
+select -tgl pCube4 ;
+select -tgl pCube1 ;
+select -tgl pCube1 pCube22 pCube31 ;
+select -tgl pCube2 ;
+select -tgl pCube23 ;
+select -tgl pCube24 ;
+select -tgl pCube25 ;
+select -tgl pCube26 ;
+move 0 0 3;
+select -cl  ;
+// Undo: select -cl   // 
+// Undo: move 0 0 3 // 
+move -r 0 0 0.0273091 ;
+select -cl  ;
+select -tgl pCube1 pCube2 pCube3 pCube4 pCube5 pCube22 pCube23 pCube24 pCube25 pCube26 pCube27 pCube28 pCube29 pCube30 pCube31 pCube32 pCube33 pCube34 pCube35 ;
+move 3 3 3;
+select -cl  ;
+// Undo: select -cl   // 
+// Undo: move 3 3 3 // 
+scale 3 0 3;
+scale 3 1 3;
+scale 3 0.55 3;
+scale 3 0.25 3;
+scale 2.55 0.25 3;
+scale 2.95 0.25 3;
+scale 2.95 0.25 1.95;
+scale 2.95 0.25 2.15;
+scale 2.95 0.25 2.95;
+select -cl  ;
+select -r pCube25 ;
+select -cl  ;
+polyCube; 
+move 0 2.3 0;
+select "pCube16"; 
+scale 0.84 2.91 1.5;
+// Error: line 1: No object matches name: pCube16 // 
+select "pCube36"; 
+scale 0.84 2.91 1.5;
+select "pCube36"; 
+rotate 0 0 88.5;
+select -cl  ;
+select -r pCube36 ;
+polyCylinder;
+// Result: pCylinder1 polyCylinder1 // 
+select -cl  ;
+select -r pCylinder1 ;
+doDelete;
+select -r pCube36 ;
+select -cl  ;
+polyCylinder; 
+move 0 2.4 0;
+polyCylinder; 
+move 0 2.5 0;
+polyCylinder; 
+move 0 3.1 0;
+select -r pCube36 ;
+select -r pCylinder1 ;
+doDelete;
+select -r pCylinder2 ;
+doDelete;
+select -r pCylinder3 ;
+select "pCylinder3";
+move 0 3.2 0;
+move 0 3.55 0;
+move 0 3.58 0;
+move 0 3.60 0;
+move 0 3.65 0;
+move 0 3.70 0;
+rotate 0 0 0.5;
+rotate 0 0 90.5;
+scale 0.75 1 0.75;
+move 0 3.1 0;
+move 0 3.5 0;
+move 0 3.2 0;
+move 1 3.2 0;
+move -1 3.2 0;
+move -0.55 3.2 0;
+move -0.65 3.2 0;
+move -0.45 3.2 0;
+move -0.47 3.2 0;
+move -0.40 3.2 0;
+select -cl  ;
+select -r pCylinder3 ;
+select -cl  ;
+polyCube; 
+rotate 0 0 180; 
+scale 0.77 2.3 1.3;
+move -0.45 3.2 0;
+select -cl  ;
+select -r pCube37 ;
+move -0.50 3.2 0;
+move -0.10 3.2 0;
+move 0.10 3.2 0;
+move 0.60 3.2 0;
+move 0.70 3.2 0;
+move 0.90 3.2 0;
+move 1.15 3.2 0;
+move 1.5 3.2 0;
+move 1.05 3.2 0;
+move 1.05 3.3 0;
+move 1.05 3.6 0;
+move 1.05 3.9 0;
+move 1.05 3.85 0;
+move 1.05 3.80 0;
+select -r pCylinder3 ;
+rotate 0 0 92;
+rotate 0 0 90;
+rotate 0 0 80;
+rotate 0 0 88;
+rotate 0 0 89.5;
+polyCube; 
+rotate 0 0 88.5;  
+scale 0.225 1.983 1.485;
+move 3 3 0;
+move 1 3 0;
+move 1 3.9 0;
+move 1 4 0;
+move 1 4.95 0;
+polySphere; 
+scale 0.3 0.3 0.3; 
+move 1 4.93 0;
+move 1 4.95 0;
+move 1 5.0 0;
+move 1 5.55 0;
+move 1 5.15 0;
+move 1 5.5 0;
+move 1 5.08 0;
+select -r pCylinder3 ;
+select -cl  ;
+polyCylinder; 
+scale 0.37 1.5 0.37; 
+move -0.45 3.2 0; 
+rotate 0 0 180;
+move -r -0.0712907 0 0 ;
+move -45 3.5 0;
+move -0.45 3.5 0;
+move -0.45 3.95 0;
+move -0.45 4.55 0;
+move -0.40 4.55 0;
+move -0.50 4.55 0;
+move -0.60 4.55 0;
+move -0.70 4.55 0;
+move -0.80 4.55 0;
+scale 0.30 1.5 0.30;
+scale 0.30 00.30;
+scale 0.30 1 0.30;
+scale 0.30 2 0.30;
+scale 0.40 2 0.30;
+scale 0.50 2 0.30;
+scale 0.50 2 0.50;
+scale 0.40 2 0.50;
+scale 0.45 2 0.50;
+scale 0.35 2 0.50;
+scale 0.35 2 0.56;
+scale 0.45 2 0.56;
+scale 0.45 1.15 0.56;
+scale 0.15 1.15 0.56;
+scale 0.15 1.15 0.86;
+scale 0.15 1.15 0.16;
+scale 0.15 1.15 0.36;
+scale 0.15 1.15 0.56;
+scale 0.55 1.15 0.56;
+scale 0.35 1.15 0.56;
+scale 0.25 1.15 0.56;
+scale 0.25 1.15 0.35;
+move -r -0.0852606 0 0 ;
+scale 0.25 1.15 1;
+scale 0.25 1.15 0;
+scale 0.25 1.15 0.22;
+scale 1.5 1.15 0.22;
+scale 1 1.15 0.22;
+scale 0.88 1.15 0.22;
+scale 0.78 1.15 0.22;
+scale 0.58 1.15 0.22;
+scale 0.50 1.15 0.22;
+scale 0.50 1.15 0.52;
+select -r pCylinder4 ;
+doDelete;
+polyCone; 
+scale 0.37 1.5 0.37; 
+move -45 3 0;
+polyCone; 
+scale 0.37 1.5 0.37; 
+move -4.5 3 0;
+select -r pCone2 ;
+select -cl  ;
+select -r pCone2 ;
+rotate 0 0 180;
+move -5.1 3 0;
+move -3.1 3 0;
+move -2.1 3 0;
+move -1.1 3 0;
+move -1.1 3.5 0;
+move -1.1 3.88 0;
+move -1.5 3.88 0;
+move -1.95 3.88 0;
+move -0.95 3.88 0;
+select -r pCone1 ;
+doDelete;
+select -r pCone2 ;
+select -cl  ;
+select -r pCube36 ;
+duplicate; 
+move 4 1 0;
+select -cl  ;
+select -r pCube39 ;
+move 4 1.5 0;
+move 4 2.5 0;
+move 4 2.0 0;
+move 4 2.2 0;
+select -cl  ;
+select -r pCube36 ;
+select -cl  ;
+polyTorus; 
+scale 0.1 0.2 0.35; 
+rotate 90 0 0; 
+move 0 1.5 0;
+select -cl  ;
+select -r pTorus1 ;
+move 0.45 1.5 1.5;
+move 0.45 1.5 1;
+move -0.45 1.5 1;
+move -0.45 1.5 0.55;
+move -0.45 1.5 0.85;
+move -0.35 1.5 0.85;
+duplicate; 
+move -0.50 1.5 0.85;
+select -cl  ;
+select -r pTorus2 ;
+move -0.60 1.5 0.85;
+move -0.90 1.5 0.85;
+move -1.55 1.5 0.85;
+move -1.5 1.5 0.85;
+move -1.1 1.5 0.85;
+move -1.35 1.5 0.85;
+select -cl  ;
+select -r pTorus1 ;
+move -1.45 1.5 0.85;
+move -1.15 1.5 0.85;
+move -1.5 1.5 0.85;
+move -1.05 1.5 0.85;
+move -0.45 1.5 0.85;
+move -0.85 1.5 0.85;
+select -cl  ;
+polyTorus; 
+scale 0.7 0.45 0.75;
+move 1.25 1.5 0.85;
+select -r pCube2 ;
+select -cl  ;
+select -r pTorus3 ;
+rotate 90 0 0;
+move 1.25 2 0.85;
+move 1.15 2 0.85;
+move 1.15 2 0.95;
+move 1.15 2 1.25;
+select -r pTorus3 ;
+// Undo: select -r pTorus3  // 
+// Undo: move 1.15 2 1.25 // 
+move 1.15 2.5 0.85;
+duplicate; 
+move 1.15 2.5 -0.85;
+select -r pTorus1 ;
+duplicate; 
+move -0.85 1.5 -0.85;
+select -cl  ;
+select -r pTorus2 ;
+duplicate; 
+move -1.35 1.5 -0.85;
+select -cl  ;
+select -r pTorus1 ;
+move -0.85 155 0.85;
+move -0.55 155 0.85;
+select -cl  ;
+// Undo: select -cl   // 
+// Undo: move -0.55 155 0.85; // 
+// Undo: move -0.85 155 0.85; // 
+move -0.55 1.55 0.85;
+move -0.55 1.75 0.85;
+move -0.55 1.95 0.85;
+move -0.55 2.05 0.85;
+move -0.55 2.00 0.85;
+select -r pTorus2 ;
+move -1.35 2.00 0.85;
+select -r pTorus5 ;
+move -0.85 2.00 -0.85;
+move -0.95 2.00 -0.85;
+move -0.15 2.00 -0.85;
+move -0.55 2.00 -0.85;
+select -r pTorus6 ;
+move -1.35 2.00 -0.85;
+select -r pCube39 ;
+select -r pTorus1 ;
+duplicate; 
+move 4 2 0.85;
+select -cl  ;
+select -r pTorus7 ;
+move 4.5 2 0;
+move 4.5 2 0.85;
+move 3.55 2 0.85;
+move 3.15 2 0.85;
+move 3.05 2 0.85;
+move 2.85 2 0.85;
+move 2.85 1.88 0.85;
+move 2.85 1.68 0.85;
+move 2.85 1.78 0.85;
+move 2.85 1.85 0.85;
+duplicate;
+move 2.85 1.85 -0.85;
+duplicate;
+move 3.85 1.85 -0.85;
+select -cl  ;
+select -r pTorus9 ;
+move 4.5 1.85 -.85;
+move 4.55 1.85 -.85;
+move 4.95 1.85 -.85;
+move 5.05 1.85 -.85;
+move 5.15 1.85 -.85;
+duplicate; 
+move 5.15 1.85 0.85;
+select -cl  ;
+select -r pTorus3 ;
+sphere; 
+scale 0.45 0.45 0.45;
+select -r pTorus3 ;
+select -r nurbsSphere1 ;
+move 1.15 2.1 3;
+move 1.15 2.1 -85;
+move 1.15 2.1 -0.85;
+move 1.15 2.1 -1.5;
+move 1.15 2.1 1.5;
+move 1.15 2.1 1.0;
+move 1.15 2.1 .80;
+move 1.15 2.22 .80;
+move 1.15 2.42 .80;
+move 1.15 2.62 .80;
+move 1.15 2.52 .80;
+move 1.15 2.52 .85;
+select -r pTorus1 ;
+select -cl  ;
+sphere; 
+scale 0.19 0.19 0.19;
+move -0.55 2 0.85;
+select -cl  ;
+select -r nurbsSphere2 ;
+scale 0.15 0.15 0.15;
+scale 0.10 0.10 0.10;
+scale 0.12 0.12 0.12;
+scale 0.12 0.15 0.12;
+scale 0.12 0.25 0.12;
+scale 0.12 0.20 0.12;
+scale 0.12 0.19 0.12;
+scale 0.12 0.18 0.12;
+scale 0.12 0.15 0.12;
+select -r pTorus2 ;
+duplicate; 
+move -1.35 2 0.85;
+select -cl  ;
+// Undo: select -cl   // 
+// Undo: duplicate; 
+move -1.35 2 0.85; // 
+select -r nurbsSphere2 ;
+duplicate; 
+move -1.35 2 0.85;
+select -r nurbsSphere1 ;
+select -cl  ;
+duplicate; 
+move 1.15 2.52 -0.85;
+// Error: line 1: This command requires at least 1 argument(s) to be specified or selected;  found 0. // 
+// Error: line 1: No object(s) to duplicate // 
+select -r nurbsSphere1 ;
+duplicate; 
+move 1.15 2.52 -0.85;
+select -r pTorus1 nurbsSphere2 ;
+select -cl  ;
+select -r nurbsSphere2 ;
+select -r nurbsSphere4 ;
+select -r pTorus1 ;
+select -cl  ;
+select -r nurbsSphere2 ;
+duplicate; 
+move -0.55 2 -0.85;
+select -cl  ;
+select -r nurbsSphere3 ;
+duplicate; 
+move -1.35 2 -0.85;
+select -r pTorus7 ;
+select -r nurbsSphere6 ;
+duplicate; 
+move 2.85 1.85 0.85;
+select -cl  ;
+select -r nurbsSphere7 ;
+select -r pTorus10 ;
+select -r nurbsSphere7 ;
+duplicate; 
+move 5.15 1.85 0.85;
+duplicate; 
+move 5.15 1.85 -0.85;
+select -r nurbsSphere7 ;
+duplicate; 
+move 2.85 1.85 -0.85;
+select -cl  ;
+select -r pCube36 pCylinder3 pCube37 pCone2 pCube39 pTorus1 pTorus2 pTorus3 pTorus4 pTorus5 pTorus6 pTorus7 pTorus8 pTorus9 pTorus10 nurbsSphere1 nurbsSphere2 nurbsSphere3 nurbsSphere4 nurbsSphere5 nurbsSphere6 nurbsSphere7 nurbsSphere8 nurbsSphere9 nurbsSphere10 ;
+select -r pCube36 pCylinder3 pCube37 pCube38 pSphere1 pCone2 pCube39 pTorus1 pTorus2 pTorus3 pTorus4 pTorus5 pTorus6 pTorus7 pTorus8 pTorus9 pTorus10 nurbsSphere1 nurbsSphere2 nurbsSphere3 nurbsSphere4 nurbsSphere5 nurbsSphere6 nurbsSphere7 nurbsSphere8 nurbsSphere9 nurbsSphere10 ;
+doGroup 0 1 1;
+rename "group1" "train ";
+// Result: train // 
+move 0 2 0;
+move 0 1 0;
+move 0 0.55 0;
+move 0 0.15 0;
+move 0 -0.15 0;
+move 0 -0.85 0;
+move 0 -0.95 0;
+move 0 -1.5 0;
+move 0 -1.0 0;
+move 0 -1.2 0;
+move 0 -1.3 0;
+select -cl  ;
+polyCube; 
+scale 1.3 1.5 1.1;
+select -cl  ;
+select -r pCube40 ;
+select -r pCube39 ;
+select -cl  ;
+select -r pCube40 ;
+move 4 2.2 0;
